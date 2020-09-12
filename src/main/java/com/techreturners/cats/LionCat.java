@@ -1,23 +1,6 @@
 package com.techreturners.cats;
 
-public class LionCat implements Cat {
-    private boolean isAsleepNow = false;
-
-    @Override
-    public boolean goToSleep() {
-        return isAsleepNow = true;
-    }
-
-    @Override
-    public boolean wakeUp() {
-        return isAsleepNow = false;
-    }
-
-    @Override
-    public boolean isAsleep() {
-        return isAsleepNow;
-    }
-
+public class LionCat extends Cat {
     @Override
     public String eat() {
         return "Roar!!!!";
@@ -32,4 +15,5 @@ public class LionCat implements Cat {
     public int getAverageHeight() {
         return 1100;
     }
+
 }
